@@ -36,7 +36,7 @@ export default {
       state.token = token;
     },
 
-    clearError(state) {
+    clearToken(state) {
       state.token = null;
     }
   },
