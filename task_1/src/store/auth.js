@@ -21,8 +21,9 @@ export default {
         },
         function(response) {
           console.log("Error", response.statusText);
-          commit("setError", error);
-        });
+          commit("setError", response.statusText);
+        }
+      );
     }
   },
 
@@ -42,5 +43,5 @@ export default {
 
   getters: {
     token: state => state.token
-  },
+  }
 };
